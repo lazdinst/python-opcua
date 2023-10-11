@@ -6,6 +6,7 @@ import asyncio
 app = Flask(__name__)
 CORS(app)
 
+# Took this endpoint from nodeopcua samples in dos
 server_endpoint = "opc.tcp://opcuademo.sterfive.com:26543"
 node_detail = "ns=1;s=SystemMemoryFree"
 PORT = 6969
