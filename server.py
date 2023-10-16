@@ -7,8 +7,9 @@ app = Flask(__name__)
 CORS(app)
 
 # Took this endpoint from nodeopcua samples in dos
-server_endpoint = "opc.tcp://opcuademo.sterfive.com:26543"
-node_detail = "ns=1;s=SystemMemoryFree"
+# server_endpoint = "opc.tcp://opcuademo.sterfive.com:26543"
+server_endpoint = "opc.tcp://localhost:50000"
+node_detail = "s=BaseTemperature"
 PORT = 6969
 
 async def get_opc_data_async():
